@@ -16,3 +16,21 @@ body
     color: var(--branco);
     font-family: 'Lobster', sans-serif;
 }
+.conteudo-principal { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.botao {
+    font-family: "Lobster", sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
+    width: 100%;
+}
