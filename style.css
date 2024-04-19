@@ -3,12 +3,17 @@
 
 :root {
 --cor-de-fundo: #005c5c;
---verde:#28e017;
+--verde:#cdcfcd;
 --branco:#FFFFFF;
 --botao-ativo:#c0cac0;
 --botao-inativo: rgba(2, 2, 3, 0.5);
 --texto-fundo: rgba(139, 12, 12, 0.3);
 }
+
+
+
+
+
 
 body
 {
@@ -20,14 +25,11 @@ body
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: 1200px;
+    align-items: center;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    .titulo-principal{ 
-        text-aling: left;
-        width: 100%;
-        font-size: 32px;
-    }
+    
 }
 .botao {
     font-family: "Lobster", sans-serif;
@@ -36,13 +38,19 @@ body
     display: flex;
     justify-content: center;
     padding: 1em;
+    font-size: 18px;
     align-items: center;
     width: 100%;
+}
+.titulo-principal {
+    text-align: left;
+    width:100%;
+    font-size: 32px;
 }
 .botoes {
     display: block;
 }
-@media screen and (min-widh: 768px){
+@media screen and (min-width: 768px){
 .botoes { 
 display:flex
 }
@@ -50,11 +58,10 @@ display:flex
     border-radius: 40px 0 0 0;
 }
 .botao.last-child {
-    border-radius: 0 px 0 0;
+    border-radius: 0 40px 0 0;
 }
 .botao.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 10px solid var(--verde);
 }
-
- }
+}
