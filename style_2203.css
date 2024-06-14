@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root { 
+    --cor-de-fundo: #19e0d3;
+    --verde: #faf6f6;
+    --branco: #f9f8f8;
+    --botao-ativo: #15dbdb;
+    --botao-inativo: rgba(134, 143, 143, 0.5);
+    --texto-fundo: rgba(0, 83, 249, 0.3);
+}
+
+
+
+
+
+
+body {
+
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Lobster' , sans-serif;
+}
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.botao {
+ font-family: "Lobster", sans-serif;
+ background-color: var(--botao-inativo);
+ color: var(--branco);
+ display: flex;
+ justify-content: center;
+ padding: 1em;
+ font-size: 18px;
+ align-items: center;
+ width: 100%;
+}
+.titulo-principal {
+text-align: left;
+width:100%;
+font-size: 32px;
+}
