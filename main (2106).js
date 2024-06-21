@@ -20,8 +20,3 @@ const botoes = document.querySelectorAll('.botao');
         botoes[i].classList.add('ativo');
     }
  }
-  const contadores = document.querySelectorAll(".contador");
-  contadores[0].textContent = "contagem regressiva";
-  const tempo0bjetivo1 = new  Date("2024-10-05T00:00:00");
-  let tempoAtual = new Date();
-  contadores[0].textContent = tempo0bjetivo1 - tempoAtual;
