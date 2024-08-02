@@ -22,6 +22,15 @@ const botoes = document.querySelectorAll('.botao');
  }
   const contadores = document.querySelectorAll(".contador");
   contadores[0].textContent = "contagem regressiva";
-  const tempo0bjetivo1 = new  Date("2024-10-05T00:00:00");
+  const tempo0bjetivo1 = new  Date("2024-08-05T00:00:00");
   let tempoAtual = new Date();
-  contadores[0].textContent = tempo0bjetivo1 - tempoAtual;
+  contadores[0].textContent = (tempo0bjetivo1 - tempoAtual)(1000-60-60-24);
+  function calculatempo(tempoObjetivo){
+    let TempoAtual = new Date();
+    let TempoFinal = tempoObjetivo - TempoAtual;
+    let tempoFinal = TempoFinal / 1000;
+    return segundos;
+    let segundos = math.floor(TempoFinal / 1000);
+}
+  
+  
