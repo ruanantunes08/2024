@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+:root{ 
+    --cor-de-fundo: #27318f;
+    --verde:#4907ff;
+    --branco:#000000;
+    --botao-ativo:#a0afdaf1;
+    --botao-inativo: rgba(242, 242, 2, 0.5);
+    --texto-fundo: rgba(65, 222, 3, 0.932);
+color: #8606c1;
+}
+
+
+
+body{
+background-color: rgba(44, 235, 197, 0.866);
+font-family: 'lobster', sans-serif;
+}
+
+h2 {
+color: rgb(54, 54, 54);
+}
+
+.conteudo-principal{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+}
+
+.titulo-principal{
+      text-align: left;
+      width: 100%;
+      font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+
+.botao{
+    font-family: "lobster",sans-serif;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+
+}      
+
+.botoes{
+   display: block;
+}
+@media screen and (min-width: 768px){
+    .botoes {
+        display: flex;
+    }
+}
+.botao:first-child {
+              border-radius: 40px 0 0 0;
+    }
+.botao:last-child {
+               border-radius: 0 40px 0 0;
+}
+
+.abas-textos {
+background-color: var(--texto-fundo);
+}
+
+.botao.ativo {
+    background-color: var(--botao-ativo);
+    border-bottom: 10px solid var(--verde);
+}
+
+.aba-conteudo.ativo{
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.contador{
+     font-size: 40px;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+}
+
+.contador-digito{
+    padding: 0 26px; 
+    text-align: center;   
+}
+
+.contador-digito-numero{
+font-size: 60px;
+margin: 0;
+text-align: center;
+color:#ff0707
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+    
+}
